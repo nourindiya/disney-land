@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Meet Disney Characters",
+        "description": "What could be more fun than meeting your favorite Disney character in person? Minnie and Mickey Mouse have residences in Disneyland's Toontown.",
+        "img": "https://www.tripsavvy.com/thmb/U3kGCru3-xLHGOL3FNVN2LLjwJE=/1250x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-506908408-5b6b2212c9e77c0082b0dc0d.jpg"
+    },
+    {
+        "name": "Frozen Show",
+        "description": "Disneyland and California Adventure have some great live shows featuring singing, dancing, and sometimes a little audience participation.",
+        "img": "https://www.tripsavvy.com/thmb/ydgtH0Cuy9W0uUm64GaS20Em-nM=/1250x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/frozenshow-5b6b210dc9e77c002527dbc5.jpg"
+    },
+    {
+        "name": "Watch Parade",
+        "description": "In most places, you're lucky to see one parade a year, but at Disneyland, you can watch two or three in a single day.",
+        "img": "https://www.tripsavvy.com/thmb/zOPTq3fDyafhCDLY_AChKDqCG38=/537x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/pixar-5b6b212cc9e77c00504193d7.jpg"
+    },
+    {
+        "name": "Watch the Fireworks",
+        "description": "Disneyland has fireworks about 250 times a year, and they're some of the best you'll see anywhere. They're launched using low-smoke. ",
+        "img": "https://www.tripsavvy.com/thmb/efzsVJc7ovHgViC6NHvaEvJXvcE=/537x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-492888024-5b6b2337c9e77c0025283d0b.jpg"
+    },
+    {
+        "name": "Skyline Tour",
+        "description": " The Skyline, and Skyline Twilight tour visits the more modern gathering spaces of DTLA. ",
+        "img": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/09/c2/81/2c.jpg"
+    },
+    {
+        "name": "Fantasmic!",
+        "description": "Fantasmic! is a combination of live action and projected Disney images and movie clips on a mist screen.",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/93/73/89/mark-twain-river-boat.jpg?w=1200&h=-1&s=1"
+    }
+]

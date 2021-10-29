@@ -1,0 +1,35 @@
+.f-container{
+    display: grid;
+    grid-template-columns: repeat(2,6fr);
+    margin-top: 30px;
+   margin-left: 178px;
+
+}
+
+.f-img{
+    height: 400px;
+    width: 700px;
+}
+@media only screen and (max-width:688px){
+  
+    .f-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 5px; 
+    }
+    .f-img {
+        height: 300px;
+        width: 300px;
+     
+    }
+    /* .input2{
+        border-radius: 5px;
+        width: 300px;
+        height: 35px;
+        background-color: rgba(128, 128, 128, 0.24);
+        border: 1px solid gray;
+    } */
+.bg-3{
+    width: 300px;
+}
+}
