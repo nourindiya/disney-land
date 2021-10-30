@@ -7,7 +7,7 @@ const Add = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/activities', data)
+        axios.post('https://still-shore-02172.herokuapp.com/activities', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Activity Added Succesfully')

@@ -8,7 +8,7 @@ const Register = () => {
     const location = useLocation()
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
-    console.log('camefrom', location.state?.from);
+    // console.log('camefrom', location.state?.from);
 
     const handleGoogleSignIn = () => {
         signInUsingGoogle()

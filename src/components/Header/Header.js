@@ -10,34 +10,26 @@ const Header = () => {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" className="nav" variant="light">
-                <Container >
+            <Navbar collapseOnSelect expand="lg" className="nav text-light" variant="light">
+                <Container>
                     <Navbar.Brand className="text-light" href="#home">Disney Land</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link className="link" as={Link} to="/home">Home</Nav.Link>
-
                         {
                             user.email &&
-                            <Nav.Link className="link" as={Link} to="/add">Add Activity
+                            <Nav.Link className="link" as={Link} to="/dashBoard">Dash Board
+
                             </Nav.Link>
-
                         }
-
                         {
                             user.email &&
-                            <Nav.Link className="link" as={Link} to="/myOrder">My orders
-                            </Nav.Link>
+                            <Navbar.Text className="text-light mx-2">
 
-                        }
-
-                        {
-                            user.email &&
-                            <Navbar.Text className="mx-2 text-light">
                                 User: {user.displayName}
+
                             </Navbar.Text>
                         }
-
                         {
                             user.email ?
                                 <button className="btn-2" onClick={logOut} type="submit">Log Out</button>

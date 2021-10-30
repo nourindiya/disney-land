@@ -4,18 +4,25 @@ import useAuth from '../../hooks/useAuth';
 import "./Login.css"
 const Login = () => {
 
-    const { signInUsingGoogle } = useAuth();
+    const { signInUsingGoogle, setIsLoading, setUser } = useAuth();
 
     const location = useLocation()
+
     const history = useHistory();
+
     const redirect_uri = location.state?.from || '/home';
-    console.log('camefrom', location.state?.from);
 
 
     const handleGoogleSignIn = () => {
         signInUsingGoogle()
             .then(result => {
+                setIsLoading(true);
+                const loggedInUser = result.user;
+                setUser(loggedInUser);
                 history.push(redirect_uri)
+            })
+            .finally(() => {
+                setIsLoading(false);
             })
     }
 

@@ -7,7 +7,7 @@ const BookedActivity = ({ singleActivity, bookedActivitys, setBookedActivitys })
     const handledelete = (id) => {
         const procceed = window.confirm('Are you sure to remove this activity?');
         if (procceed) {
-            const url = `http://localhost:5000/orders/${id}`
+            const url = `https://still-shore-02172.herokuapp.com/orders/${id}`
             fetch(url, {
                 method: "DELETE"
             })

@@ -13,7 +13,7 @@ const MyOrder = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders?email=${user.email}`)
+        fetch(`https://still-shore-02172.herokuapp.com/orders?email=${user.email}`)
             .then(res => res.json())
             .then(data => setBookedActivitys(data));
 
@@ -38,10 +38,8 @@ const MyOrder = () => {
     }
     else {
         return (
-            <h1 className="text tittle center text-muted mt-5">Haven't Added Anything Yet</h1>
+            <h1 className="else tittle center text-muted ">Haven't Added Anything Yet</h1>
         )
-
-
     }
 };
 

@@ -5,7 +5,10 @@ import useAuth from '../../hooks/useAuth';
 
 const PrivateRoute = ({ children, ...rest }) => {
 
-    const { user } = useAuth();
+    const { user, isLoading } = useAuth();
+    if (isLoading) {
+        return ("Loading")
+    }
 
     return (
         <Route
@@ -18,8 +21,6 @@ const PrivateRoute = ({ children, ...rest }) => {
             >
             </Redirect>}
         >
-
-
         </Route>
     );
 };

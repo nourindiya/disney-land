@@ -7,7 +7,7 @@ const Activities = () => {
     const [activites, setActivites] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:5000/activities")
+        fetch("https://still-shore-02172.herokuapp.com/activities")
             .then(res => res.json())
             .then(data => setActivites(data))
     }, [])
@@ -21,7 +21,6 @@ const Activities = () => {
                     activites.map(activity =>
                         <Activity
                             key={activity._id}
-                            // key={activity.key}
                             activity={activity}
                         >
                         </Activity>

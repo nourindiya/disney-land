@@ -16,6 +16,8 @@ import Add from './components/Add/Add';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Booking from './components/Booking/Booking';
+import DashBoard from './components/DashBoard/DashBoard';
+import Allorders from './components/Allorders/Allorders';
 
 function App() {
   return (
@@ -35,18 +37,26 @@ function App() {
             </Route>
 
 
-            <Route path="/myOrder">
+            <PrivateRoute path="/myOrder">
               <MyOrder></MyOrder>
-            </Route>
+            </PrivateRoute>
+
+            <PrivateRoute path="/allOrders">
+              <Allorders></Allorders>
+            </PrivateRoute>
+
+            <PrivateRoute path="/dashBoard">
+              <DashBoard></DashBoard>
+            </PrivateRoute>
 
 
             <PrivateRoute path="/booking/:id">
               <Booking></Booking>
             </PrivateRoute>
 
-            <Route path="/add">
+            <PrivateRoute path="/add">
               <Add></Add>
-            </Route>
+            </PrivateRoute>
 
 
             <Route path="/login">

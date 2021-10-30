@@ -15,10 +15,11 @@ const BookingForm = ({ activity }) => {
         const status = 'pending'
         const { name, email, description } = shippingInfo;
         const orderData = { name, email, status, activity, description }
-        axios.post('http://localhost:5000/orders', orderData)
+        axios.post('https://still-shore-02172.herokuapp.com/orders', orderData)
             .then(res => {
-                if (res.data.insertOne) {
+                if (res.data.insertedId) {
                     alert('Order Placed Successfully')
+
                     reset()
                 }
             })
