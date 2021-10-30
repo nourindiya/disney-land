@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useForm } from "react-hook-form";
+import "./Add.css"
 
 const Add = () => {
     const { register, handleSubmit, reset } = useForm();
@@ -8,7 +9,6 @@ const Add = () => {
         console.log(data)
         axios.post('http://localhost:5000/activities', data)
             .then(res => {
-                // console.log(res);
                 if (res.data.insertedId) {
                     alert('Activity Added Succesfully')
                     reset();
@@ -16,9 +16,9 @@ const Add = () => {
             })
     };
     return (
-        <div className="mt-5 mb-5">
-            <h1>Add Activity</h1>
-            <form className="mt-5" onSubmit={handleSubmit(onSubmit)}>
+        <div className="mt-5 mb-5  activity-form w-75  p-5 mx-auto">
+            <h1 className="tittle">Add Activity</h1>
+            <form className="mt-5 pp add" onSubmit={handleSubmit(onSubmit)}>
                 <label className="mx-4" htmlFor="Name"> Name : </label>
                 <input {...register("name", { required: true, maxLength: 20 })} />
                 <br />

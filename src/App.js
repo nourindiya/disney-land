@@ -11,12 +11,11 @@ import Footer from './components/Footer/Footer';
 import Notfound from './components/Notfound/Notfound';
 import Login from './components/LogIn/Login';
 import Register from './components/Register/Register';
-// import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import MyOrder from './components/MyOrder/MyOrder';
 import Add from './components/Add/Add';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-// import Details from './components/Details/Details';
+import Booking from './components/Booking/Booking';
 
 function App() {
   return (
@@ -35,8 +34,14 @@ function App() {
               <Home></Home>
             </Route>
 
-            <PrivateRoute path="/myOrder/:id">
+
+            <Route path="/myOrder">
               <MyOrder></MyOrder>
+            </Route>
+
+
+            <PrivateRoute path="/booking/:id">
+              <Booking></Booking>
             </PrivateRoute>
 
             <Route path="/add">
@@ -52,6 +57,7 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
+
 
             <Route path="*">
               <Notfound></Notfound>

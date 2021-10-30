@@ -16,9 +16,21 @@ const Header = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link className="link" as={Link} to="/home">Home</Nav.Link>
-                        <Nav.Link className="link" as={Link} to="/add">Add Activity</Nav.Link>
-                        <Nav.Link className="link" as={Link} to="/about">About Us</Nav.Link>
-                        <Nav.Link className="link" as={Link} to="/contact">Contact</Nav.Link>
+
+                        {
+                            user.email &&
+                            <Nav.Link className="link" as={Link} to="/add">Add Activity
+                            </Nav.Link>
+
+                        }
+
+                        {
+                            user.email &&
+                            <Nav.Link className="link" as={Link} to="/myOrder">My orders
+                            </Nav.Link>
+
+                        }
+
                         {
                             user.email &&
                             <Navbar.Text className="mx-2 text-light">
@@ -28,9 +40,7 @@ const Header = () => {
 
                         {
                             user.email ?
-
                                 <button className="btn-2" onClick={logOut} type="submit">Log Out</button>
-
                                 :
                                 <Nav.Link className="link" as={Link} to="/login">Log In</Nav.Link>
                         }

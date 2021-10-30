@@ -8,7 +8,6 @@ const Activities = () => {
 
     useEffect(() => {
         fetch("http://localhost:5000/activities")
-            // fetch('./produtcs.json')
             .then(res => res.json())
             .then(data => setActivites(data))
     }, [])
@@ -21,7 +20,8 @@ const Activities = () => {
                 {
                     activites.map(activity =>
                         <Activity
-                            key={activity.key}
+                            key={activity._id}
+                            // key={activity.key}
                             activity={activity}
                         >
                         </Activity>

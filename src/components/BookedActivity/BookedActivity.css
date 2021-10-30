@@ -1,0 +1,20 @@
+.red{
+    background-color: rgb(230, 75, 75);
+    border: 1px solid rgb(230, 75, 75);
+    border-radius: 3px;
+    color: black;
+}
+
+.blue{
+    background-color: rgb(59, 169, 233);
+    border: 1px solid rgb(107, 161, 241);
+    border-radius: 3px;
+    color: black;
+}
+ .order{
+     background-color: rgba(228, 167, 188, 0.863);
+     width: 40%;
+     border-radius: 10px;
+     margin-bottom: 20px;
+     margin-top: 20px;
+ }
